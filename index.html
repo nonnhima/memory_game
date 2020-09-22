@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
+    <script type="text/javascript" src="js/show_popup.js"></script>
+    <script type="text/javascript" src="js/board.js"></script>
+    <script type="text/javascript" src="js/card.js"></script>
+    <title>神経衰弱ゲーム</title>
+</head>
+
+<body>
+    <div class="timer_content">
+	<div class="timer">00:00.00</div>
+    </div>
+    <div class="flip-boards"></div>
+
+    <div class="popup" id="new_game">
+        <div class="popup-inner">
+            <h1>神経衰弱ゲームを開始します。</h1>
+            <br>
+            <p>Let the Memory Games begin.</p>
+            <p>Are you ready?</p>
+            <div class="start_btn_area">
+                <div class="start_btn">START</div>
+            </div>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+    </div>
+
+    <div class="popup" id="won_popup">
+        <div class="popup-inner">
+            <div class="close-btn js-close-btn"><i class="fas fa-times"></i></div>
+            <table>
+              <tr>
+                <th></th>
+                <th>RESULT</th>
+                <th>SCORE</th>
+              </tr>
+              <tr>
+                <td><i class="fas fa-stopwatch"></i> TIME</td>
+                <td><span class="timer"></span></td>
+                <td><span class="score time_score"></span></td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-mouse-pointer"></i> CLICK</td>
+                <td><span class="click_count"></span> times</td>
+                <td><span class="score click_score"></span></td>
+              </tr>
+            </table>
+            <br>
+            <p style="font-weight: bold;">This is the cat you clicked the most.</p>
+            <div class="most_clicked" style="text-align: center; margin: 28px 0 30px 0;">
+                <img src="" style="width:110px !important;" id="most_clicked_img">
+            </div>
+            <p class="attention">もう一度遊ぶ場合はブラウザをリロードしてください。<br>
+                If you reload the browser, you can play the game again.
+            </p>
+        </div>
+        <div class="black-background js-black-bg"></div>
+    </div>
+</body>
+</html>
